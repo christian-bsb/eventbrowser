@@ -5,13 +5,14 @@
 
 # Start/Stop Event Database
   * `sudo docker run --name eventdb -e POSTGRES_PASSWORD=eventpw -d -p 5432:5432 postgres`
+  * `sudo docker start eventdb`
   * `sudo docker container ls -a`
   * `sudo docker container rm <id>`
   * `sudo docker stop eventdb`
 
 # deployments
   * local home: http://localhost:8092
-  * anzeige eines typs eines batches: http://localhost:8092/status/1645534897194/infoo
+  * anzeige eines typs eines batches: http://localhost:8092/status/batch/1646302029084/error
   * HAL explorer: http://localhost:8092/explorer/index.html#uri=/
 
 # reset db
